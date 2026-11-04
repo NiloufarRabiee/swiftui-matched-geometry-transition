@@ -1,0 +1,17 @@
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode
+DerivedData/
+*.xcuserstate
+xcuserdata/
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+
+# Local configuration
+.env

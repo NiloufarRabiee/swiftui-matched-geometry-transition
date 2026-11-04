@@ -1,0 +1,31 @@
+name: Bug report
+description: Report a reproducible problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: What happened?
+      description: Describe the observed and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include a short Swift snippet if possible.
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Swift, Xcode, and OS version
+      placeholder: Swift 5.10, Xcode 15.4, iOS 17.5
+    validations:
+      required: true
+  - type: textarea
+    id: accessibility
+    attributes:
+      label: Accessibility context
+      description: Note whether Reduce Motion or VoiceOver is enabled.
