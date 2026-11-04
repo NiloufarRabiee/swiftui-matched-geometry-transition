@@ -15,6 +15,11 @@ let package = Package(
     ],
     targets: [
         .target(name: "MatchedGeometryTransition"),
+        .target(
+            name: "MatchedGeometryTransitionExamples",
+            dependencies: ["MatchedGeometryTransition"],
+            path: "Examples"
+        ),
         .testTarget(
             name: "MatchedGeometryTransitionTests",
             dependencies: ["MatchedGeometryTransition"]
